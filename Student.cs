@@ -1,25 +1,23 @@
 using System;
+using System.Collections.Generic;
 
 namespace StudentExercises
 {
     class Student
     {
+        public string StudentFirstName;
+        public string StudentLastName;
+        public string StudentSlackHandle;
+        // public string StudentCohort;
 
-        private string _StudentFirstName;
-        private string _StudentLastName;
-        private string _StudentSlackHandle;
-        private string _StudentCohort;
+        public List<Exercise> exercises = new List<Exercise>();
 
-        //is this where my collection(list) of Student Exercises should be?
-
-        public Student(string firstName, string lastName, string slackHandle, string studentCohort)
+        public Student(string firstName, string lastName, string slackHandle)
         {
-            _StudentFirstName = firstName;
-            _StudentLastName = lastName;
-            _StudentSlackHandle = slackHandle;
-            _StudentCohort = studentCohort;
+            StudentFirstName = firstName;
+            StudentLastName = lastName;
+            StudentSlackHandle = slackHandle;
 
         }
-
     }
 }

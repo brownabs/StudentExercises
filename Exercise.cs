@@ -5,16 +5,15 @@ namespace StudentExercises
     class Exercise
     {
 
-        private string _ExerciseName;
-        private string _ExerciseLanguage;
+        public string ExerciseName { get; set; }
+        public string ExerciseLanguage { get; set; }
 
         public Exercise(string name, string language)
         {
-            _ExerciseName = name;
-            _ExerciseLanguage = language;
+            ExerciseName = name;
+            ExerciseLanguage = language;
 
         }
-
 
     }
 }

@@ -1,17 +1,17 @@
 using System;
+using System.Collections.Generic;
 
 namespace StudentExercises
 {
     class Cohort
     {
-        //CohortName is read only 
-        public string CohortName
+        
+        public string Name { get; }
+        public List<Student> Students { get; set; } = new List<Student>();
+        public List<Instructor> Instructors { get; set; } = new List<Instructor>();
+        public Cohort(string name)
         {
-            get { return _Name; }
+            Name = name;
         }
-        private string _Name;
-
-        //collection of students
-        //collection of instructors
     }
 }
