@@ -13,5 +13,21 @@ namespace StudentExercises
         {
             Name = name;
         }
+        public void Print () {
+            Console.WriteLine($@"
+            
+            Cohort Name : {Name} 
+            ---------------------
+           
+            ");  
+            foreach(Instructor taco in Instructors) {
+
+            taco.Print();
+
+            };
+            foreach(Student taco in Students) {
+                taco.Print();
+            }
+        }
     }
 }

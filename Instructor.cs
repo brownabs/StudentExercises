@@ -19,7 +19,11 @@ namespace StudentExercises
 
         //A method to assign an exercise to a student
          public void AssignExercise (Exercise exercise, Student student) {
-            student.exercises.Add(exercise);
+            student.Exercises.Add(exercise);
+        }
+
+        public void Print() {
+            Console.WriteLine($"Instructor: {_InstructorFirstName} {_InstructorLastName}");
         }
 
     }

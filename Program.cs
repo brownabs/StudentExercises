@@ -24,6 +24,7 @@ namespace StudentExercises
             Student Kirren = new Student("Kirren", "Correy", "animallover");
             Student Janet = new Student("Janet", "Woods", "thejokester");
 
+            //class Cohort with Students List contained in it
             c32.Students.Add(Abbey);
             c33.Students.Add(Katerina);
             c34.Students.Add(Kirren);
@@ -37,13 +38,12 @@ namespace StudentExercises
 
             c32.Instructors.Add(Steve);
             c33.Instructors.Add(Kimmy);
-            c34.Instructors.Add(Jenna);
-            c32.Students.Add(Abbey);
-            c33.Students.Add(Katerina);
-            c33.Students.Add(Kirren);
-            c34.Students.Add(Janet);
+            c34.Instructors.Add(Jenna); 
+            
 
+         
 
+        //    c34.Instructors.ForEach(instr => Console.WriteLine(instr));
             // Have each instructor assign 2 exercises to each of the students.
 
             Steve.AssignExercise(carLot, Abbey);
@@ -52,6 +52,8 @@ namespace StudentExercises
             Jenna.AssignExercise(dailyJournal, Katerina);
             Kimmy.AssignExercise(carLot, Janet);
             Kimmy.AssignExercise(legoLand, Janet);
+            Kimmy.AssignExercise(dailyJournal, Kirren);
+            Kimmy.AssignExercise(legoLand, Kirren);
 
 
             // Create a list of students. Add all of the student instances to it.
@@ -70,20 +72,9 @@ namespace StudentExercises
             exercises.Add(contactList);
             exercises.Add(legoLand);
 
-
-            // Generate a report that displays which students are working on which exercises.
-
-            foreach (Student student in students)
-            {
-                Console.WriteLine($@"
-                {student.StudentFirstName} {student.StudentLastName}
-                ");
-            } 
-
-            foreach (Exercise exercise in Abbey.exercises)
-            {
-                 Console.WriteLine($"{exercise.ExerciseName} {exercise.ExerciseLanguage}");
-            }
+            c32.Print();
+            c33.Print();
+            c34.Print();
 
         }
     }

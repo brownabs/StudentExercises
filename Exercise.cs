@@ -12,7 +12,11 @@ namespace StudentExercises
         {
             ExerciseName = name;
             ExerciseLanguage = language;
-
+        }
+        public void Print() {
+            Console.WriteLine($@"
+            ------------------------------------
+            Student Exercises: {ExerciseName} in {ExerciseLanguage}");
         }
 
     }
