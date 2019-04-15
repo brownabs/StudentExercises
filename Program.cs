@@ -14,6 +14,7 @@ namespace StudentExercises
             Exercise contactList = new Exercise("Contact List", "React");
 
             // Create 3, or more, cohorts.
+            //can only do this constructor method if you are passing in every argument previously declared
             Cohort c32 = new Cohort("Cohort 32");
             Cohort c33 = new Cohort("Cohort 33");
             Cohort c34 = new Cohort("Cohort 34");
@@ -42,8 +43,6 @@ namespace StudentExercises
             
 
          
-
-        //    c34.Instructors.ForEach(instr => Console.WriteLine(instr));
             // Have each instructor assign 2 exercises to each of the students.
 
             Steve.AssignExercise(carLot, Abbey);

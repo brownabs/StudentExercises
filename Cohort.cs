@@ -15,9 +15,10 @@ namespace StudentExercises
         }
         public void Print () {
             Console.WriteLine($@"
+
+    ------------------------------------------
             
             Cohort Name : {Name} 
-            ---------------------
            
             ");  
             foreach(Instructor taco in Instructors) {

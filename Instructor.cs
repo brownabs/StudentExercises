@@ -19,11 +19,15 @@ namespace StudentExercises
 
         //A method to assign an exercise to a student
          public void AssignExercise (Exercise exercise, Student student) {
+
+             //take the exercise and assign it to the student's list of exercises
+             //remember that things are being read from right to left
             student.Exercises.Add(exercise);
         }
 
         public void Print() {
-            Console.WriteLine($"Instructor: {_InstructorFirstName} {_InstructorLastName}");
+            Console.WriteLine($@"
+            Instructor: {_InstructorFirstName} {_InstructorLastName}");
         }
 
     }
